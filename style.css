@@ -1,332 +1,74 @@
-/*
- * public/style.css - 侦探主题（暗黑科技风格）
- */
-
-:root {
-    /* 核心配色 */
-    --main-bg: #121212; /* 深黑背景 */
-    --dark-surface: #1e1e1e; /* 稍亮的背景/卡片 */
-    --dark-bg: #282828; /* 输入框/按钮基色 */
-    --text-color: #e0e0e0; /* 亮灰文本 */
-    --accent-green: #00ff99; /* 核心强调色（科技感） */
-    --accent-red: #ff4444; /* 错误/警告色 */
-    --accent-blue: #44aaff; /* 辅助色 */
-}
-
-/* --- 1. 全局样式和排版 --- */
-
 body {
-    font-family: 'Consolas', 'Courier New', monospace; /* 科技感字体 */
-    background-color: var(--main-bg);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow-x: hidden;
-    line-height: 1.6;
+  font-family: "Microsoft YaHei", sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
 }
 
-h1, h2, h3 {
-    color: var(--accent-green);
-    text-align: center;
-    text-shadow: 0 0 5px rgba(0, 255, 153, 0.5); /* 标题发光 */
-    font-weight: bold;
-    letter-spacing: 1px;
+.container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
+h1, h2 {
+  text-align: center;
 }
 
-p {
-    margin-bottom: 10px;
+#word-display {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
 }
 
-hr {
-    border: none;
-    height: 1px;
-    background-color: #444;
-    margin: 20px 0;
+#options, #review-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
-/* --- 2. 布局和容器 --- */
-
-#app-container {
-    width: 90%;
-    max-width: 800px;
-    min-height: 500px;
-    background-color: var(--dark-surface);
-    border: 1px solid var(--accent-green);
-    box-shadow: 0 0 20px rgba(0, 255, 153, 0.2); /* 容器弱发光 */
-    padding: 30px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
+.option-btn {
+  padding: 10px 15px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-/* 顶部进度和导航 */
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #333;
+.option-btn:hover {
+  background: #357ab7;
 }
 
-#progress-bar {
-    flex-grow: 1;
-    height: 10px;
-    background-color: #333;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-right: 20px;
+#feedback {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
 }
-
-#progress-fill {
-    height: 100%;
-    width: 0;
-    background-color: var(--accent-green);
-    transition: width 0.5s ease-in-out;
-}
-
-#inventory-toggle {
-    background: none;
-    border: 1px solid var(--accent-blue);
-    color: var(--accent-blue);
-    padding: 5px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-#inventory-toggle:hover {
-    background-color: var(--accent-blue);
-    color: var(--dark-surface);
-}
-
-/* 主要内容区域 */
-#main-content {
-    flex-grow: 1;
-    padding: 10px 0;
-}
-
-/* 任务容器基础样式 */
-.task-container {
-    background-color: var(--dark-surface);
-    padding: 20px;
-    border-radius: 6px;
-    border-left: 5px solid var(--accent-green);
-    min-height: 300px;
-}
-
-/* --- 3. 交互元素 (按钮/输入框) --- */
 
 button {
-    background-color: var(--accent-green);
-    color: var(--dark-surface);
-    border: none;
-    padding: 12px 25px;
-    margin: 5px 8px 5px 0;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.2s, transform 0.1s;
-    box-shadow: 0 4px 0 #009966; /* 3D效果 */
+  margin-top: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #4a90e2;
+  color: #fff;
 }
 
 button:hover {
-    background-color: #00cc88;
-    transform: translateY(1px);
-    box-shadow: 0 3px 0 #009966;
+  background: #357ab7;
 }
 
-button:active {
-    transform: translateY(4px);
-    box-shadow: 0 0 0 #009966;
-}
-
-button:disabled {
-    background-color: #555;
-    color: #bbb;
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-}
-
-input[type="text"], input[type="password"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 15px;
-    background: var(--dark-bg);
-    border: 1px solid #555;
-    color: var(--text-color);
-    border-radius: 4px;
-    transition: border-color 0.3s;
-}
-
-input[type="text"]:focus, input[type="password"]:focus {
-    border-color: var(--accent-green);
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 255, 153, 0.5);
-}
-
-/* --- 4. 任务组件特定样式 --- */
-
-.word-display {
-    font-size: 2.2em;
-    text-align: center;
-    margin: 20px 0;
-    padding: 15px;
-    background-color: var(--dark-bg);
-    border: 1px solid #444;
-    border-radius: 4px;
-    color: var(--accent-blue);
-    text-shadow: 0 0 3px rgba(68, 170, 255, 0.8);
-}
-
-.option-list button {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    background-color: var(--dark-bg);
-    color: var(--text-color);
-    border: 1px solid var(--accent-blue);
-    box-shadow: 0 3px 0 #225588;
-}
-
-.option-list button:hover {
-    background-color: #333;
-    color: var(--accent-blue);
-}
-
-/* 句子重组/词语银行 */
-.sentence-puzzle #word-bank {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 15px;
-    border: 2px dashed #444;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    background-color: #1a1a1a;
-}
-
-.sentence-puzzle #word-bank button {
-    background-color: #555;
-    color: var(--text-color);
-    padding: 8px 15px;
-    margin: 0;
-    box-shadow: none;
-    transform: none;
-}
-.sentence-puzzle #word-bank button:hover {
-    background-color: #777;
-    transform: none;
-}
-
-/* 填空题 */
-.fill-in-blank div {
-    font-style: italic;
-    padding: 15px;
-    background-color: #1a1a1a;
-    border-left: 3px solid var(--accent-red);
-}
-
-/* 匹配卡片 */
-.word-match {
-    text-align: center;
-}
-.word-match p {
-    color: var(--accent-green);
-}
-.clue-card-item {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
-.clue-card-item button {
-    margin-top: 15px;
-    background-color: var(--accent-blue);
-    box-shadow: 0 4px 0 #225588;
-}
-.clue-card-item button:hover {
-    background-color: #336699;
-}
-#match-status {
-    font-weight: bold;
-}
-
-
-/* --- 5. 特殊效果 (活动/结局) --- */
-
-.title-glow {
-    text-shadow: 0 0 8px var(--accent-green);
-    animation: pulse 1.5s infinite alternate;
-}
-
-@keyframes pulse {
-    from {
-        opacity: 0.8;
-    }
-    to {
-        opacity: 1;
-        text-shadow: 0 0 10px var(--accent-green);
-    }
-}
-
-/* 结局动画占位符 */
-.css-scroll-animation {
-    font-family: 'Times New Roman', serif;
-    background: #f0e68c; /* 羊皮纸色 */
-    color: #4a410d;
-    border: 5px double #a0522d; /* 土棕色边框 */
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    text-align: left;
-    height: auto !important; /* 覆盖js中的高度设置 */
-    max-height: 400px;
-    overflow-y: hidden;
-    transform-origin: top;
-    animation: unroll 2s forwards;
-    margin: 30px auto !important;
-}
-
-@keyframes unroll {
-    0% { transform: scaleY(0.05); opacity: 0; }
-    100% { transform: scaleY(1); opacity: 1; }
-}
-
-/* 密室活动 - 钥匙孔效果 */
-.keyhole {
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle at 50% 50%, #000 30%, #333 70%);
-    border-radius: 50%;
-    margin: 30px auto;
-    border: 5px solid var(--accent-red);
-    box-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
-    transition: all 1s ease-in-out;
-    position: relative;
-    overflow: hidden;
-}
-
-.lock-unlocked {
-    border-color: var(--accent-green);
-    box-shadow: 0 0 20px var(--accent-green);
-    animation: keyhole-glow 0.8s forwards;
-}
-
-@keyframes keyhole-glow {
-    0% { opacity: 1; }
-    100% { 
-        opacity: 0.5; /* 模拟光芒冲出 */
-        transform: scale(1.5);
-    }
+.hidden {
+  display: none;
 }
