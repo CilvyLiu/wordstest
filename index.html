@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>猜猜谁是间谍 - 单词闯关</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Spy Vocabulary Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico">
 </head>
 <body>
-<div id="app">
+<div id="app-container">
 
-  <!-- 首页模块 -->
-  <section id="home">
-    <h1>🕵️‍♂️ 猜猜谁是间谍</h1>
-    <button id="startGame">开始游戏</button>
-    <button id="viewWords">查看词库</button>
-    <button id="teacherMode">教师模式</button>
-  </section>
+    <!-- 顶部导航与进度 -->
+    <div id="header">
+        <div id="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+        <button id="inventory-toggle">Clues</button>
+    </div>
 
-  <!-- 游戏模块 -->
-  <section id="game" style="display:none;">
-    <div id="levelInfo"></div>
-    <div id="activityContainer"></div>
-    <button id="nextBtn" style="display:none;">下一题 / 下一活动</button>
-  </section>
-
-  <!-- 结局模块 -->
-  <section id="result" style="display:none;">
-    <h2>游戏结束 🎉</h2>
-    <div id="finalClues"></div>
-    <div id="scoreSummary"></div>
-    <button id="restartBtn">重新开始</button>
-  </section>
+    <!-- 主内容 -->
+    <div id="main-content">
+        <h1 class="title-glow">Guess Who is the Spy</h1>
+        <button id="start-game">Start Game</button>
+    </div>
 
 </div>
-<script src="main.js"></script>
+
+<script src="./main.js"></script>
 </body>
 </html>
