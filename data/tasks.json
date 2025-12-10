@@ -7,102 +7,85 @@
         {
           "type": "WordPractice",
           "items": [
-            {"word":"culture","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"civil","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"civilize","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"civilized","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"civilization","mode":["choice_en","choice_cn","spelling","sentence"]}
+            {"word":"culture","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"civil","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"civilize","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"civilized","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"civilization","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]}
           ]
         },
         {
           "type": "MiniGame",
-          "game": "PicturePuzzle",
+          "game": "SpyGame",
           "reward": "clue_card",
-          "description": "拼出图案揭示隐藏的文明线索"
+          "description": "找出谁是间谍"
         }
       ]
     },
-
     {
       "groupId": 2,
-      "words": ["identity", "national identity", "cultural identity", "period", "era"],
+      "words": ["identity","national identity","cultural identity","period","era"],
       "activities": [
         {
           "type": "WordPractice",
           "items": [
-            {"word":"identity","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"national identity","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"cultural identity","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"period","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"era","mode":["choice_en","choice_cn","spelling","sentence"]}
+            {"word":"identity","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"national identity","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"cultural identity","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"period","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"era","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]}
           ]
         },
         {
           "type": "MiniGame",
-          "game": "WordMatch",
-          "reward": "clue_card",
-          "description": "匹配词汇与释义"
+          "game": "SpyGame",
+          "reward": "clue_card"
         }
       ],
       "reviewAfter": true,
       "reviewTask": {
         "type": "Review",
         "activities": [
-          {"type": "QuizChoice"},
-          {"type": "SpellingBox"},
-          {"type": "SentencePuzzle"},
-          {"type": "FillInBlank"},
-          {
-            "type": "PassageCloze",
-            "title": "Origins of Identity",
-            "description": "使用前 10 个单词完成篇章填空"
-          }
+          {"type":"QuizChoice"},
+          {"type":"SpellingBox"},
+          {"type":"SentencePuzzle"},
+          {"type":"FillInBlank"},
+          {"type":"PassageCloze","title":"Origins of Identity","description":"使用前10个单词完成篇章填空"}
         ]
       }
     },
-
     {
       "groupId": 3,
-      "words": ["prehistoric era", "ancient civilization", "medieval", "renaissance", "enlightenment"],
-      "activities": [
-        {
-          "type": "WordPractice",
-          "items": [
-            {"word":"prehistoric era","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"ancient civilization","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"medieval","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"renaissance","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"enlightenment","mode":["choice_en","choice_cn","spelling","sentence"]}
-          ]
-        },
-        {
-          "type":"MiniGame",
-          "game":"SentencePuzzle",
-          "reward":"clue_card",
-          "description":"重组句子获得历史谜团线索"
-        }
-      ]
-    },
-
-    {
-      "groupId": 4,
-      "words": ["industrial revolution", "origin", "originate", "survive", "evolve"],
-      "activities": [
+      "words": ["prehistoric era","ancient civilization","medieval","renaissance","enlightenment"],
+      "activities":[
         {
           "type":"WordPractice",
           "items":[
-            {"word":"industrial revolution","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"origin","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"originate","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"survive","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"evolve","mode":["choice_en","choice_cn","spelling","sentence"]}
+            {"word":"prehistoric era","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"ancient civilization","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"medieval","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"renaissance","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"enlightenment","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]}
           ]
         },
+        {"type":"MiniGame","game":"SpyGame","reward":"clue_card"}
+      ]
+    },
+    {
+      "groupId": 4,
+      "words": ["industrial revolution","origin","originate","survive","evolve"],
+      "activities":[
         {
-          "type":"MiniGame",
-          "game":"SpellingBox",
-          "reward":"clue_card"
-        }
+          "type":"WordPractice",
+          "items":[
+            {"word":"industrial revolution","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"origin","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"originate","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"survive","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"evolve","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]}
+          ]
+        },
+        {"type":"MiniGame","game":"SpyGame","reward":"clue_card"}
       ],
       "reviewAfter": true,
       "reviewTask":{
@@ -112,49 +95,42 @@
           {"type":"WordMatch"},
           {"type":"FillInBlank"},
           {"type":"SentencePuzzle"},
-          {
-            "type":"PassageCloze",
-            "title":"Evolution of Society",
-            "description":"选择合适词汇完成文章"
-          }
+          {"type":"PassageCloze","title":"Evolution of Society","description":"选择合适词汇完成文章"}
         ]
       }
     },
-
     {
       "groupId": 5,
-      "words": ["evolution", "ancestor", "migrate", "migrant", "migration"],
+      "words":["evolution","ancestor","migrate","migrant","migration"],
       "activities":[
         {
           "type":"WordPractice",
           "items":[
-            {"word":"evolution","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"ancestor","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"migrate","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"migrant","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"migration","mode":["choice_en","choice_cn","spelling","sentence"]}
+            {"word":"evolution","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"ancestor","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"migrate","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"migrant","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"migration","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]}
           ]
         },
-        {"type":"MiniGame","game":"PicturePuzzle","reward":"clue_card"}
+        {"type":"MiniGame","game":"SpyGame","reward":"clue_card"}
       ]
     },
-
     {
       "groupId": 6,
-      "words": ["emigrate", "emigrant", "emigration", "immigrate", "immigrant"],
+      "words":["emigrate","emigrant","emigration","immigrate","immigrant"],
       "activities":[
         {
           "type":"WordPractice",
           "items":[
-            {"word":"emigrate","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"emigrant","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"emigration","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"immigrate","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"immigrant","mode":["choice_en","choice_cn","spelling","sentence"]}
+            {"word":"emigrate","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"emigrant","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"emigration","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"immigrate","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"immigrant","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]}
           ]
         },
-        {"type":"MiniGame","game":"WordMatch","reward":"clue_card"}
-      ],
+        {"type":"MiniGame","game":"SpyGame","reward":"clue_card"},
       "reviewAfter":true,
       "reviewTask":{
         "type":"Review",
@@ -163,49 +139,42 @@
           {"type":"SpellingBox"},
           {"type":"FillInBlank"},
           {"type":"SentencePuzzle"},
-          {
-            "type":"PassageCloze",
-            "title":"Migration Stories",
-            "description":"篇章填空复习本阶段词汇"
-          }
+          {"type":"PassageCloze","title":"Migration Stories","description":"篇章填空复习本阶段词汇"}
         ]
       }
     },
-
     {
       "groupId": 7,
-      "words": ["immigration", "race", "human race", "majority", "minority"],
+      "words":["immigration","race","human race","majority","minority"],
       "activities":[
         {
           "type":"WordPractice",
           "items":[
-            {"word":"immigration","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"race","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"human race","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"majority","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"minority","mode":["choice_en","choice_cn","spelling","sentence"]}
+            {"word":"immigration","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"race","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"human race","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"majority","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"minority","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]}
           ]
         },
-        {"type":"MiniGame","game":"SentencePuzzle","reward":"clue_card"}
+        {"type":"MiniGame","game":"SpyGame","reward":"clue_card"}
       ]
     },
-
     {
       "groupId": 8,
-      "words": ["ethnic", "custom", "customize", "tailor", "trailer"],
+      "words":["ethnic","custom","customize","tailor","trailer"],
       "activities":[
         {
           "type":"WordPractice",
           "items":[
-            {"word":"ethnic","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"custom","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"customize","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"tailor","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"trailer","mode":["choice_en","choice_cn","spelling","sentence"]}
+            {"word":"ethnic","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"custom","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"customize","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"tailor","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"trailer","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]}
           ]
         },
-        {"type":"MiniGame","game":"SpellingBox","reward":"clue_card"}
-      ],
+        {"type":"MiniGame","game":"SpyGame","reward":"clue_card"},
       "reviewAfter":true,
       "reviewTask":{
         "type":"Review",
@@ -214,49 +183,42 @@
           {"type":"WordMatch"},
           {"type":"FillInBlank"},
           {"type":"SentencePuzzle"},
-          {
-            "type":"PassageCloze",
-            "title":"Cultural Customs",
-            "description":"完成篇章选择题"
-          }
+          {"type":"PassageCloze","title":"Cultural Customs","description":"完成篇章选择题"}
         ]
       }
     },
-
     {
       "groupId": 9,
-      "words": ["artificial", "artefact", "delicate", "subtle", "folktale"],
+      "words":["artificial","artefact","delicate","subtle","folktale"],
       "activities":[
         {
           "type":"WordPractice",
           "items":[
-            {"word":"artificial","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"artefact","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"delicate","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"subtle","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"folktale","mode":["choice_en","choice_cn","spelling","sentence"]}
+            {"word":"artificial","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"artefact","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"delicate","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"subtle","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"folktale","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]}
           ]
         },
-        {"type":"MiniGame","game":"WordMatch","reward":"clue_card"}
+        {"type":"MiniGame","game":"SpyGame","reward":"clue_card"}
       ]
     },
-
     {
       "groupId": 10,
-      "words": ["sculpture", "bust", "feast", "ceremony", "campfire"],
+      "words":["sculpture","bust","feast","ceremony","campfire"],
       "activities":[
         {
           "type":"WordPractice",
           "items":[
-            {"word":"sculpture","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"bust","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"feast","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"ceremony","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"campfire","mode":["choice_en","choice_cn","spelling","sentence"]}
+            {"word":"sculpture","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"bust","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"feast","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"ceremony","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"campfire","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]}
           ]
         },
-        {"type":"MiniGame","game":"PicturePuzzle","reward":"clue_card"}
-      ],
+        {"type":"MiniGame","game":"SpyGame","reward":"clue_card"},
       "reviewAfter":true,
       "reviewTask":{
         "type":"Review",
@@ -265,44 +227,30 @@
           {"type":"FillInBlank"},
           {"type":"SentencePuzzle"},
           {"type":"SpellingBox"},
-          {
-            "type":"PassageCloze",
-            "title":"Cultural Events",
-            "description":"使用前 50 词完成文章选择"
-          }
+          {"type":"PassageCloze","title":"Cultural Events","description":"使用前50词完成文章选择"}
         ]
       }
     },
-
     {
       "groupId": 11,
-      "words": ["worship", "symbol", "symbolize", "heritage"],
+      "words":["worship","symbol","symbolize","heritage"],
       "activities":[
         {
           "type":"WordPractice",
           "items":[
-            {"word":"worship","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"symbol","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"symbolize","mode":["choice_en","choice_cn","spelling","sentence"]},
-            {"word":"heritage","mode":["choice_en","choice_cn","spelling","sentence"]}
+            {"word":"worship","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"symbol","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"symbolize","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]},
+            {"word":"heritage","mode":["choice_en","choice_cn","sentencePuzzle","sentenceCloze","wordMatch","scenarioGuess"]}
           ]
         },
-        {
-          "type":"MiniGame",
-          "game":"SentencePuzzle",
-          "reward":"clue_card",
-          "description":"最终线索收集"
-        }
+        {"type":"MiniGame","game":"SpyGame","reward":"clue_card"}
       ]
     }
   ],
-
   "meta":{
     "wordsPerGroup":5,
     "reviewEvery":10,
-    "activityTypes":[
-      "QuizChoice","WordMatch","SpellingBox","SentencePuzzle",
-      "FillInBlank","PicturePuzzle","SpeakOrType"
-    ]
+    "activityTypes":["QuizChoice","WordMatch","SpellingBox","SentencePuzzle","FillInBlank","PicturePuzzle","SpeakOrType","scenarioGuess"]
   }
 }
