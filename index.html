@@ -2,32 +2,38 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>谁是间谍游戏</title>
+<title>谁是间谍 - 词汇游戏</title>
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.ico">
 </head>
 <body>
-<div class="container">
-  <h1>谁是间谍游戏</h1>
-  <div id="game-area">
-    <div id="word-display"></div>
-    <div id="options"></div>
-    <div id="feedback"></div>
-    <button id="next-btn">下一题</button>
+<div id="app-container">
+
+  <!-- 顶部导航与进度 -->
+  <div id="header">
+    <div id="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+    <button id="inventory-toggle">线索卡片</button>
   </div>
-  <div id="review-area" class="hidden">
-    <h2>复习关卡</h2>
-    <div id="review-display"></div>
-    <div id="review-options"></div>
-    <button id="review-next-btn">下一题</button>
+
+  <!-- 主内容 -->
+  <div id="main-content">
+    <div id="menu">
+      <h1 class="title-glow">谁是间谍</h1>
+      <button id="start-game">开始游戏</button>
+      <button id="view-tasks">查看词汇任务</button>
+      <button id="teacher-mode">教师模式</button>
+    </div>
+
+    <div id="game-area" class="hidden">
+      <div class="task-container" id="task-container"></div>
+    </div>
+
   </div>
-  <div id="summary" class="hidden">
-    <h2>完成！</h2>
-    <p id="score"></p>
-    <button id="restart-btn">重新开始</button>
-  </div>
+
 </div>
-<script src="tasks.json"></script>
+<script src="tasks.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
