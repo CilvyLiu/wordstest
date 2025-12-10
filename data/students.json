@@ -1,0 +1,48 @@
+{
+  "students": [
+    {
+      "id": "s001",
+      "name": "Student 01",
+      "progress": {
+        "currentGroup": 1,
+        "wordsLearned": [],
+        "activitiesCompleted": {"miniGames": 0, "reviews": 0},
+        "detectivePoints": 0,
+        "clueCards": [],
+        "spySuspicion": 0.10
+      }
+    },
+    {
+      "id": "s002",
+      "name": "Student 02",
+      "progress": {
+        "currentGroup": 1,
+        "wordsLearned": [],
+        "activitiesCompleted": {"miniGames": 0, "reviews": 0},
+        "detectivePoints": 0,
+        "clueCards": [],
+        "spySuspicion": 0.35
+      }
+    },
+    {
+      "id": "s003",
+      "name": "Student 03",
+      "progress": {
+        "currentGroup": 1,
+        "wordsLearned": [],
+        "activitiesCompleted": {"miniGames": 0, "reviews": 0},
+        "detectivePoints": 0,
+        "clueCards": [],
+        "spySuspicion": 0.55
+      }
+    }
+  ],
+  "meta":{
+    "suspicionRange":[0,1],
+    "detectiveLevels":{
+      "rookie":0,
+      "agent":80,
+      "elite":160
+    }
+  }
+}
