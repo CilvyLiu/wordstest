@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #ecf0f1;
+    --card-background: #ffffff;
+    --text-color: #2c3e50;
+    --border-color: #bdc3c7;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+h1 {
+    margin: 0 0 5px 0;
+    font-size: 2em;
+}
+
+#app-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* 词汇组卡片样式 */
+.group-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.group-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.group-header {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.group-header h2 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+/* 词汇列表 */
+.word-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.word-list li {
+    background-color: #f8f8f8;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* 活动和复习任务样式 */
+.activities, .review-task {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border-color);
+}
+
+.activities h3, .review-task h3 {
+    color: var(--secondary-color);
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.activity-item {
+    background-color: #e8f5e9; /* Light green for activities */
+    padding: 8px;
+    margin-bottom: 8px;
+    border-left: 3px solid var(--secondary-color);
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.review-item {
+    background-color: #ffebee; /* Light red for reviews */
+    padding: 8px;
+    margin-bottom: 8px;
+    border-left: 3px solid #e74c3c;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.review-item strong {
+    color: #c0392b;
+}
+
+.review-item span.title {
+    font-style: italic;
+    font-weight: normal;
+    color: #7f8c8d;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--text-color);
+    color: white;
+    margin-top: 30px;
+}

@@ -1,0 +1,214 @@
+{
+    "MiniGame-1": {
+        "game": "PicturePuzzle",
+        "details": {
+            "image_hint": "古埃及金字塔",
+            "pieces": 9,
+            "goal": "拼出图案揭示隐藏的文明线索"
+        }
+    },
+
+    "MiniGame-2": {
+        "game": "WordMatch",
+        "details": [
+            { "word": "identity", "definition": "身份；特性" },
+            { "word": "national identity", "definition": "民族认同" },
+            { "word": "era", "definition": "时代；纪元" }
+        ]
+    },
+    
+    "QuizChoice-2": {
+        "description": "选择题复习前 10 词",
+        "question_count": 5
+    },
+    "SpellingBox-2": {
+        "description": "拼写练习",
+        "words_to_spell": ["culture", "civilize", "identity"]
+    },
+    "SentencePuzzle-2": {
+        "description": "重组句子练习",
+        "sentences_count": 2
+    },
+    "FillInBlank-2": {
+        "description": "填空题复习",
+        "fill_words": ["civilization", "period"]
+    },
+    "PassageCloze-2": {
+        "title": "Origins of Identity",
+        "description": "使用前 10 个单词完成篇章填空",
+        "passage": "Understanding our **[identity]** is crucial. Every **[period]** has shaped the concept of **[cultural identity]** in society."
+    },
+
+    "MiniGame-3": {
+        "game": "SentencePuzzle",
+        "details": {
+            "puzzle_count": 3,
+            "theme": "历史时期"
+        }
+    },
+
+    "MiniGame-4": {
+        "game": "SpellingBox",
+        "details": {
+            "words": ["origin", "originate", "survive", "evolve"],
+            "grid_size": "5x5",
+            "clue": "找出所有进化相关的词汇"
+        }
+    },
+    
+    "QuizChoice-4": {
+        "description": "选择题复习",
+        "question_count": 5
+    },
+    "WordMatch-4": {
+        "game": "WordMatch",
+        "details": [
+            { "word": "industrial revolution", "definition": "工业革命" },
+            { "word": "originate", "definition": "起源于" },
+            { "word": "survive", "definition": "幸存" }
+        ]
+    },
+    "FillInBlank-4": {
+        "description": "填空题复习",
+        "fill_words": ["origin", "evolve"]
+    },
+    "SentencePuzzle-4": {
+        "description": "重组句子练习",
+        "sentences_count": 2
+    },
+    "PassageCloze-4": {
+        "title": "Evolution of Society",
+        "description": "选择合适词汇完成文章",
+        "passage": "Societies must constantly **[evolve]** to **[survive]** technological changes."
+    },
+
+    "MiniGame-5": {
+        "game": "PicturePuzzle",
+        "details": {
+            "image_hint": "早期人类迁徙路线图",
+            "pieces": 6,
+            "goal": "拼出图案揭示迁徙线索"
+        }
+    },
+
+    "MiniGame-6": {
+        "game": "WordMatch",
+        "details": [
+            { "word": "emigrate", "definition": "移居国外" },
+            { "word": "immigrate", "definition": "移居入国" },
+            { "word": "emigrant", "definition": "移出者" }
+        ]
+    },
+    
+    "QuizChoice-6": {
+        "description": "选择题复习",
+        "question_count": 5
+    },
+    "SpellingBox-6": {
+        "description": "拼写练习",
+        "words_to_spell": ["migration", "immigrant", "emigration"]
+    },
+    "FillInBlank-6": {
+        "description": "填空题复习",
+        "fill_words": ["ancestor", "migrate"]
+    },
+    "SentencePuzzle-6": {
+        "description": "重组句子练习",
+        "sentences_count": 2
+    },
+    "PassageCloze-6": {
+        "title": "Migration Stories",
+        "description": "篇章填空复习本阶段词汇",
+        "passage": "When people **[emigrate]**, they often become an **[immigrant]** in another country, leading to large scale **[migration]**."
+    },
+
+    "MiniGame-7": {
+        "game": "SentencePuzzle",
+        "details": {
+            "puzzle_count": 3,
+            "theme": "人种和种族"
+        }
+    },
+
+    "MiniGame-8": {
+        "game": "SpellingBox",
+        "details": {
+            "words": ["ethnic", "custom", "customize", "tailor"],
+            "grid_size": "4x4",
+            "clue": "找出所有定制相关的词汇"
+        }
+    },
+    
+    "QuizChoice-8": {
+        "description": "选择题复习",
+        "question_count": 5
+    },
+    "WordMatch-8": {
+        "game": "WordMatch",
+        "details": [
+            { "word": "ethnic", "definition": "民族的" },
+            { "word": "custom", "definition": "习俗" }
+        ]
+    },
+    "FillInBlank-8": {
+        "description": "填空题复习",
+        "fill_words": ["majority", "minority"]
+    },
+    "SentencePuzzle-8": {
+        "description": "重组句子练习",
+        "sentences_count": 2
+    },
+    "PassageCloze-8": {
+        "title": "Cultural Customs",
+        "description": "完成篇章选择题",
+        "passage": "It is an **[ethnic]** **[custom]** to **[customize]** clothing by a **[tailor]**."
+    },
+
+    "MiniGame-9": {
+        "game": "WordMatch",
+        "details": [
+            { "word": "artificial", "definition": "人造的" },
+            { "word": "artefact", "definition": "人工制品" },
+            { "word": "subtle", "definition": "微妙的" }
+        ]
+    },
+
+    "MiniGame-10": {
+        "game": "PicturePuzzle",
+        "details": {
+            "image_hint": "古罗马雕塑或宴会场景",
+            "pieces": 9,
+            "goal": "拼出图案揭示艺术线索"
+        }
+    },
+    
+    "QuizChoice-10": {
+        "description": "选择题复习",
+        "question_count": 5
+    },
+    "FillInBlank-10": {
+        "description": "填空题复习",
+        "fill_words": ["sculpture", "feast"]
+    },
+    "SentencePuzzle-10": {
+        "description": "重组句子练习",
+        "sentences_count": 2
+    },
+    "SpellingBox-10": {
+        "description": "拼写练习",
+        "words_to_spell": ["ceremony", "campfire", "folktale"]
+    },
+    "PassageCloze-10": {
+        "title": "Cultural Events",
+        "description": "使用前 50 词完成文章选择",
+        "passage": "The **[ceremony]** concluded with a grand **[feast]** around the **[campfire]**, a truly symbolic event."
+    },
+
+    "MiniGame-11": {
+        "game": "SentencePuzzle",
+        "details": {
+            "puzzle_count": 3,
+            "theme": "遗产与象征"
+        }
+    }
+}
